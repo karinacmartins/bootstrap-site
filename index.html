@@ -7,6 +7,8 @@
     <title>Coffee Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
 </head>
@@ -51,95 +53,58 @@
     <main>
         <!-- Carousel -->
         <!-- Carousel -->
-      <div
-      id="coffeeCarousel"
-      class="carousel carousel-light slide mt-5"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#coffeeCarousel"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#coffeeCarousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#coffeeCarousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img
-            src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1961&q=80"
-            class="d-block w-100"
-            alt="Grãos de Café"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>A melhor experiência gastronômica de café</h5>
-            <p>
-              Você vai experenciar os melhores cafés do Brasil e do mundo.
-            </p>
-          </div>
+        <div id="coffeeCarousel" class="carousel carousel-light slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#coffeeCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#coffeeCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#coffeeCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1961&q=80"
+                        class="d-block w-100" alt="Grãos de Café" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>A melhor experiência gastronômica de café</h5>
+                        <p>
+                            Você vai experenciar os melhores cafés do Brasil e do mundo.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1178&q=80"
+                        class="d-block w-100" alt="Café" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Um ambiente pensado para você e sua família</h5>
+                        <p>
+                            Nosso café foi pensado para te fornecer um ambiente confortável,
+                            tranquilo e leve.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+                        class="d-block w-100" alt="Café" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Os melhores grãos</h5>
+                        <p>
+                            Trabalhamos com ingredientes selecionados, da melhor qualidade,
+                            do jeito que você merece!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#coffeeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#coffeeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1178&q=80"
-            class="d-block w-100"
-            alt="Café"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Um ambiente pensado para você e sua família</h5>
-            <p>
-              Nosso café foi pensado para te fornecer um ambiente confortável,
-              tranquilo e leve.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
-            class="d-block w-100"
-            alt="Café"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Os melhores grãos</h5>
-            <p>
-              Trabalhamos com ingredientes selecionados, da melhor qualidade,
-              do jeito que você merece!
-            </p>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#coffeeCarousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#coffeeCarousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
         <!-- Quote -->
         <figure>
@@ -168,7 +133,10 @@
                                     <h6 class="card-subtitle mb-3 text-muted">
                                         Acreditamos que o café pode mudar o (seu) mundo
                                     </h6>
-                                    <p class="card-text"> Cada xícara que servimos é feita com carinho, utilizando grãos selecionados e preparados com técnicas que garantem o máximo sabor e frescor. Aqui, o café é mais do que uma bebida: é um convite para pausar, apreciar o momento e viver novas experiências</p>
+                                    <p class="card-text"> Cada xícara que servimos é feita com carinho, utilizando grãos
+                                        selecionados e preparados com técnicas que garantem o máximo sabor e frescor.
+                                        Aqui, o café é mais do que uma bebida: é um convite para pausar, apreciar o
+                                        momento e viver novas experiências</p>
 
                                 </div>
                             </div>
@@ -189,7 +157,10 @@
                                         Profissionais especializados para levar o melhor do café
                                         até a sua mesa
                                     </h6>
-                                    <p class="card-text">Com técnicas refinadas e grãos selecionados, levamos até você o equilíbrio perfeito entre aroma, sabor e textura. Seja para um momento de pausa, uma reunião especial ou um evento exclusivo, garantimos qualidade, sofisticação e um atendimento excepcional.</p>
+                                    <p class="card-text">Com técnicas refinadas e grãos selecionados, levamos até você o
+                                        equilíbrio perfeito entre aroma, sabor e textura. Seja para um momento de pausa,
+                                        uma reunião especial ou um evento exclusivo, garantimos qualidade, sofisticação
+                                        e um atendimento excepcional.</p>
 
                                 </div>
                             </div>
@@ -229,8 +200,8 @@
                     <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1524686788093-aa1f9c0f7c4f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top"
-                                    alt="Café expresso 01" />
+                                <img src="https://images.unsplash.com/photo-1524686788093-aa1f9c0f7c4f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="card-img-top" alt="Café expresso 01" />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Expresso 01</h5>
                                     <p class="card-text">R$ 22,00</p>
@@ -239,8 +210,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1515335352276-2fa88c590bb3?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top"
-                                    alt="Café Expresso 02" />
+                                <img src="https://images.unsplash.com/photo-1515335352276-2fa88c590bb3?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="card-img-top" alt="Café Expresso 02" />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Expresso 02</h5>
                                     <p class="card-text">R$ 17,00</p>
@@ -249,8 +220,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1580661869408-55ab23f2ca6e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top"
-                                    alt="Café Expresso 03" />
+                                <img src="https://images.unsplash.com/photo-1580661869408-55ab23f2ca6e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="card-img-top" alt="Café Expresso 03" />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Expresso 03</h5>
                                     <p class="card-text">R$ 12,90</p>
@@ -259,8 +230,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1596952953996-8f85c385e8d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGNhZmUlMjBleHByZXNzb3xlbnwwfHwwfHx8Mg%3D%3D" class="card-img-top"
-                                    alt="afé Expresso 04" />
+                                <img src="https://images.unsplash.com/photo-1596952953996-8f85c385e8d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGNhZmUlMjBleHByZXNzb3xlbnwwfHwwfHx8Mg%3D%3D"
+                                    class="card-img-top" alt="afé Expresso 04" />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Expresso 04</h5>
                                     <p class="card-text">R$ 8,99</p>
@@ -269,8 +240,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1561087548-73f9f131ae36?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top"
-                                    alt="Café Expresso 05" />
+                                <img src="https://images.unsplash.com/photo-1561087548-73f9f131ae36?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="card-img-top" alt="Café Expresso 05" />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Expresso 05</h5>
                                     <p class="card-text">R$ 12,00</p>
@@ -279,8 +250,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1489866492941-15d60bdaa7e0?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top"
-                                    alt="Café Expresso 06" />
+                                <img src="https://images.unsplash.com/photo-1489866492941-15d60bdaa7e0?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="card-img-top" alt="Café Expresso 06" />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Expresso 06</h5>
                                     <p class="card-text">R$ 15,00</p>
@@ -289,8 +260,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1610478506025-8110cc8f1986?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top"
-                                    alt=">Café Expresso 07" />
+                                <img src="https://images.unsplash.com/photo-1610478506025-8110cc8f1986?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="card-img-top" alt=">Café Expresso 07" />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Expresso 07</h5>
                                     <p class="card-text">R$ 9,00</p>
@@ -299,8 +270,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1634936536013-705bd5e3e6c7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top"
-                                    alt=">Café Expresso 08" />
+                                <img src="https://images.unsplash.com/photo-1634936536013-705bd5e3e6c7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="card-img-top" alt=">Café Expresso 08" />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Expresso 08</h5>
                                     <p class="card-text">R$ 21,00</p>
@@ -309,8 +280,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1621171415883-7a1b04da783a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top"
-                                    alt="Café Expresso 09" />
+                                <img src="https://images.unsplash.com/photo-1621171415883-7a1b04da783a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="card-img-top" alt="Café Expresso 09" />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Expresso 09</h5>
                                     <p class="card-text">R$ 16,00</p>
@@ -326,8 +297,8 @@
                     <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1620052087057-bfd8235f5874?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1620052087057-bfd8235f5874?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Capuccino 01</h5>
                                     <p class="card-text">R$ 22,00</p>
@@ -336,8 +307,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src=https://images.unsplash.com/photo-1534778101976-62847782c213?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FwcHVjY2lub3xlbnwwfHwwfHx8Mg%3D%3D" class="card-img-top"
-                                    alt="..." />
+                                <img src=https://images.unsplash.com/photo-1534778101976-62847782c213?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FwcHVjY2lub3xlbnwwfHwwfHx8Mg%3D%3D"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Capuccino 02</h5>
                                     <p class="card-text">R$ 17,00</p>
@@ -346,8 +317,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1534687941688-651ccaafbff8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FwcHVjY2lub3xlbnwwfHwwfHx8Mg%3D%3D" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1534687941688-651ccaafbff8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FwcHVjY2lub3xlbnwwfHwwfHx8Mg%3D%3D"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Capuccino 03</h5>
                                     <p class="card-text">R$ 12,90</p>
@@ -356,8 +327,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1502165971801-35b35e7bbf9b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1502165971801-35b35e7bbf9b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Capuccino 04</h5>
                                     <p class="card-text">R$ 8,99</p>
@@ -366,8 +337,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1532258391479-cdd295f31117?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1532258391479-cdd295f31117?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Capuccino 05</h5>
                                     <p class="card-text">R$ 12,00</p>
@@ -376,8 +347,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1466337105551-aa3ab7890939?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1466337105551-aa3ab7890939?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Capuccino 06</h5>
                                     <p class="card-text">R$ 15,00</p>
@@ -386,8 +357,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1557772611-722dabe20327?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1557772611-722dabe20327?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Capuccino 07</h5>
                                     <p class="card-text">R$ 9,00</p>
@@ -396,8 +367,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1513805803880-7b2b3b537641?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1513805803880-7b2b3b537641?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Capuccino 08</h5>
                                     <p class="card-text">R$ 21,00</p>
@@ -406,8 +377,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1515080726989-f609cfa0c1dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1515080726989-f609cfa0c1dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDI%3D"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Capuccino 09</h5>
                                     <p class="card-text">R$ 16,00</p>
@@ -422,8 +393,8 @@
                     <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1629688825560-917b9727c15b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhZmUlMjBnZWxhZG98ZW58MHwwfDB8fHwy" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1629688825560-917b9727c15b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhZmUlMjBnZWxhZG98ZW58MHwwfDB8fHwy"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Gelado 01</h5>
                                     <p class="card-text">R$ 22,00</p>
@@ -432,8 +403,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1643974148654-305f7c8cd76c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGNhZmUlMjBnZWxhZG98ZW58MHwwfDB8fHwy" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1643974148654-305f7c8cd76c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGNhZmUlMjBnZWxhZG98ZW58MHwwfDB8fHwy"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Gelado 02</h5>
                                     <p class="card-text">R$ 15,00</p>
@@ -442,8 +413,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1651438131332-61b7cd91ebca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhZmUlMjBnZWxhZG98ZW58MHwwfDB8fHwy" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1651438131332-61b7cd91ebca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhZmUlMjBnZWxhZG98ZW58MHwwfDB8fHwy"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Gelado 03</h5>
                                     <p class="card-text">R$ 17,00</p>
@@ -457,8 +428,8 @@
                     <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1622088910062-91b0190513a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FmZSUyMGVzcGVjaWFsfGVufDB8MHwwfHx8Mg%3D%3D" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1622088910062-91b0190513a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FmZSUyMGVzcGVjaWFsfGVufDB8MHwwfHx8Mg%3D%3D"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Especial 01</h5>
                                     <p class="card-text">R$ 22,00</p>
@@ -467,8 +438,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1544391125-b8c805f25873?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGNhZmUlMjBlc3BlY2lhbHxlbnwwfDB8MHx8fDI%3D" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1544391125-b8c805f25873?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGNhZmUlMjBlc3BlY2lhbHxlbnwwfDB8MHx8fDI%3D"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Especial 02</h5>
                                     <p class="card-text">R$ 15,00</p>
@@ -477,8 +448,8 @@
                         </div>
                         <div class="col">
                             <div class="card card-menu-item">
-                                <img src="https://images.unsplash.com/photo-1591811769326-d7d7bbfaafda?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGNhZmUlMjBjb2FkbyUyMG5hJTIweGljYXJhfGVufDB8MHwwfHx8Mg%3D%3D/" class="card-img-top"
-                                    alt="..." />
+                                <img src="https://images.unsplash.com/photo-1591811769326-d7d7bbfaafda?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGNhZmUlMjBjb2FkbyUyMG5hJTIweGljYXJhfGVufDB8MHwwfHx8Mg%3D%3D/"
+                                    class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h5 class="card-title">Café Especial 03</h5>
                                     <p class="card-text">R$ 17,00</p>
@@ -535,12 +506,28 @@
 
     <!-- Footer -->
     <footer class="text-center bg-dark p-5 mt-5">
-        <img class="" width="80" src="assets/images/logo.png" alt="..." />
+        <img width="80" src="assets/images/logo.png" alt="Coffee Shop Logo" />
         <p class="mt-2 mb-0 text-light fw-bold">
             Coffee Shop | Transformando sua experiência com café
         </p>
         <p class="text-light">(15) 98111-1111</p>
+        <div class="mt-3">
+            <a href="https://facebook.com" class="text-white mx-2 text-decoration-none" target="_blank">
+                <i class="bi bi-facebook fs-3"></i>
+            </a>
+            <a href="https://instagram.com" class="text-white mx-2 text-decoration-none" target="_blank">
+                <i class="bi bi-instagram fs-3"></i>
+            </a>
+            <a href="https://twitter.com" class="text-white mx-2 text-decoration-none" target="_blank">
+                <i class="bi bi-twitter-x fs-3"></i>
+            </a>
+            <a href="https://whatsapp.com" class="text-white mx-2 text-decoration-none" target="_blank">
+                <i class="bi bi-whatsapp fs-3"></i>
+            </a>
+        </div>
     </footer>
+    
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
